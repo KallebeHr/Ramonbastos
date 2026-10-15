@@ -34,9 +34,9 @@ hero: {
 },
 
 contact: {
-  phone: '(86) 12345-6789',
-  phoneRaw: '5586123456789',
-  whatsapp: '5586123456789',
+  phone: '(83) 83 9129-5236',
+  phoneRaw: '5583991295236',
+  whatsapp: '5583991295236',
   whatsappMessage: 'Olá, Dr. Ramon Bastos! Vim pelo site e gostaria de orientação jurídica sobre uma questão do agronegócio.',
   email: 'contato@seuescritorio.com.br',
   address: 'Rua dos Advogados, 123 - Centro',

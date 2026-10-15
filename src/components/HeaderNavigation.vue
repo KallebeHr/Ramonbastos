@@ -168,7 +168,7 @@ onUnmounted(() => {
             @click="closeMenu"
           >
             <span class="monogram">
-              {{ c.brand.initials }}
+              R
             </span>
 
             <span class="mobile-brand-text">
@@ -196,7 +196,7 @@ onUnmounted(() => {
           v-for="([label, href], index) in links"
           :key="href"
           :href="href"
-          :style="{ '--menu-index': index }"
+          :style="{ '--menu-index': index } "
           @click="closeMenu"
         >
           <span class="menu-number">
@@ -444,7 +444,11 @@ onUnmounted(() => {
   white-space: nowrap;
   transition: color 0.2s ease;
 }
-
+.topbar nav#navigation > a span {
+  font-size: .65rem;
+  color: #18392e;
+  letter-spacing: .1em;
+}
 .topbar nav#navigation > a:hover {
   color: var(--header-accent, #b79a65);
 }
@@ -456,6 +460,7 @@ onUnmounted(() => {
 .menu-number,
 .menu-arrow {
   display: none;
+  
 }
 
 /* =========================================
