@@ -2,7 +2,7 @@ import { reactive } from 'vue'
 export const siteConfig = reactive({
   brand: {
     officeName: 'Ramon Bastos | Advogado Agro',
-    shortName: 'Ramon Bastos | Advogado Agro',
+    shortName: 'Ramon Bastos',
     professionalName: 'Ramon Bastos',
     oab: 'OAB/PI 00.000',
     logo: '/teste.svg',
