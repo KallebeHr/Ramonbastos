@@ -80,7 +80,7 @@
       </nav>
     </div>
     <div class="masthead"><div class="wrap masthead-inner">
-      <a :aria-label="`${c.brand.officeName} — início`" class="brand" href="#inicio"><img v-if="c.brand.logo" :alt="c.brand.officeName" :src="c.brand.logo"><span v-else class="monogram">{{ c.brand.initials }}</span><span>{{ c.brand.shortName }}<small>ADVOCACIA</small></span></a>
+      <a :aria-label="`${c.brand.officeName} — início`" class="brand" href="#inicio"><img v-if="c.brand.logo" :alt="c.brand.officeName" :src="c.brand.logo" style="filter: brightness(0) invert(1);"><span v-else class="monogram">{{ c.brand.initials }}</span><span>{{ c.brand.shortName }}<small>ADVOCACIA</small></span></a>
       <form class="search" role="search" @submit.prevent="searched = true"><label class="sr-only" for="site-search">Pesquisar no site</label><input
         id="site-search"
         v-model="query"
