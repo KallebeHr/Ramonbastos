@@ -95,6 +95,7 @@
 
   <FooterSection />
 
+  <Teleport to="body">
   <div class="whatsapp-widget">
     <div v-if="bubble" class="whatsapp-bubble">
       <button aria-label="Não mostrar mais mensagens" @click="dismissed = true; bubble = false">
@@ -113,6 +114,8 @@
       <i aria-hidden="true" class="mdi mdi-whatsapp" />
     </a>
   </div>
+
+  </Teleport>
 
   <AccessibilityMenu />
 </template>

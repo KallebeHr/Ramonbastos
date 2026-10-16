@@ -124,6 +124,7 @@ onUnmounted(() => {
 </script>
 
 <template>
+  <Teleport to="body">
   <div class="accessibility-widget" @keydown.esc="open = false">
     <section v-show="open" id="accessibility-panel" aria-label="Opções de acessibilidade" class="accessibility-panel">
       <header>
@@ -154,13 +155,14 @@ onUnmounted(() => {
     </section>
     <button class="accessibility-button" aria-controls="accessibility-panel" :aria-expanded="open" aria-label="Opções de acessibilidade" @click="open = !open"><i class="mdi mdi-human" aria-hidden="true" /></button>
   </div>
+  </Teleport>
 </template>
 
 <style scoped>
 .accessibility-widget {
   position: fixed;
-  left: 20px;
-  bottom: 20px;
+  left: max(20px, env(safe-area-inset-left));
+  bottom: max(20px, env(safe-area-inset-bottom));
   z-index: 5000;
   display: flex;
   flex-direction: column;
@@ -480,8 +482,8 @@ onUnmounted(() => {
 
 @media (max-width: 420px) {
   .accessibility-widget {
-    left: 14px;
-    bottom: 14px;
+    left: max(14px, env(safe-area-inset-left));
+    bottom: max(14px, env(safe-area-inset-bottom));
   }
 
   .accessibility-panel {

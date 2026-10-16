@@ -167,9 +167,15 @@ onUnmounted(() => {
             href="#inicio"
             @click="closeMenu"
           >
-            <span class="monogram">
-              R
-            </span>
+<span class="monogram">
+  <img
+    v-if="c.brand.logo"
+    :src="c.brand.logo"
+    :alt="c.brand.shortName"
+    class="mobile-menu-logo"
+  />
+  <span v-else>{{ c.brand.initials }}</span>
+</span>
 
             <span class="mobile-brand-text">
               {{ c.brand.shortName }}
@@ -444,10 +450,11 @@ onUnmounted(() => {
   white-space: nowrap;
   transition: color 0.2s ease;
 }
-.topbar nav#navigation > a span {
-  font-size: .65rem;
-  color: #18392e;
-  letter-spacing: .1em;
+.topbar nav#navigation > a .menu-link-text {
+  display: inline;
+  font-size: inherit;
+  color: inherit;
+  letter-spacing: normal;
 }
 .topbar nav#navigation > a:hover {
   color: var(--header-accent, #b79a65);
@@ -627,7 +634,20 @@ onUnmounted(() => {
 .search button:hover {
   background: #f0f3ef;
 }
+.mobile-brand .monogram {
+  padding: 8px;
+  overflow: hidden;
+}
+.mobile-brand .monogram .mobile-menu-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 
+}
 .search button .mdi {
   font-size: 1.35rem;
 }
@@ -1245,7 +1265,16 @@ onUnmounted(() => {
   outline: 3px solid var(--header-accent, #b79a65);
   outline-offset: 3px;
 }
+/* Centraliza o menu superior somente no desktop */
+@media (min-width: 1025px) {
+  .topbar {
+    justify-content: center;
+  }
 
+  .topbar nav#navigation {
+    justify-content: center;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .site-header *,
   .search-results * {

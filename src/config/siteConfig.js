@@ -4,7 +4,7 @@ export const siteConfig = reactive({
     officeName: 'Ramon Bastos | Advogado Agro',
     shortName: 'Ramon Bastos',
     professionalName: 'Ramon Bastos',
-    oab: 'OAB/PI 00.000',
+    oab: 'OAB/MA 29.564-A',
     logo: '/teste.svg',
     initials: 'RB',
     favicon: '/favicon.ico',
@@ -24,7 +24,7 @@ export const siteConfig = reactive({
   
 hero: {
   eyebrow: 'Ramon Bastos | Advocacia Agro',
-  title: 'Segurança jurídica para quem vive e produz no campo.',
+  title: 'Atuação em prorrogação de dívidas rurais, contratos rurais, regularização imobiliária e Direito de Família e Sucessões.',
   highlight: 'no campo',
   subtitle: 'Atuação estratégica na defesa do produtor rural, com soluções jurídicas para dívidas rurais, contratos, execuções e regularização de imóveis.',
   video: '/IMG-VIDEOS/Teste.mp4',
@@ -38,15 +38,15 @@ contact: {
   phoneRaw: '5583991295236',
   whatsapp: '5583991295236',
   whatsappMessage: 'Olá, Dr. Ramon Bastos! Vim pelo site e gostaria de orientação jurídica sobre uma questão do agronegócio.',
-  email: 'contato@seuescritorio.com.br',
-  address: 'Rua dos Advogados, 123 - Centro',
-  city: 'Pedro II - PI',
-  zipCode: '64255-000',
+  email: 'advogadoramonbastos@gmail.com',
+  address: 'Estado da Paraíba e Brejo Paraibano',
+  city: 'Paraíba e Brejo Paraibano',
+  zipCode: '58840-000',
   businessHours: 'Segunda a sexta, das 8h às 18h',
   emergencyPhone: '(86) 12345-6789',
-  mapUrl: 'https://www.google.com/maps/dir/?api=1&destination=-4.4250,-41.4586',
-  latitude: -4.425,
-  longitude: -41.4586,
+  mapUrl: 'https://www.google.com/maps/dir/?api=1&destination=-6.9157868553448845,-37.956792173179856',
+  latitude: -6.9157868553448845,
+  longitude: -37.956792173179856,
   mapZoom: 16,
 },
 
@@ -89,28 +89,17 @@ documentChecklists: [
       'Documentos da propriedade e comprovantes relacionados ao contrato',
     ],
   },
-  {
-    area: 'Regularização de Imóveis Rurais',
-    approved: false,
-    reviewedBy: '',
-    reviewedAt: '',
-    items: [
-      'Documentos pessoais do proprietário ou possuidor',
-      'Matrícula, escritura, contrato ou comprovantes de posse',
-      'CAR, CCIR, ITR e demais documentos disponíveis do imóvel',
-    ],
-  },
-  {
-    area: 'Crédito e Financiamento Rural',
-    approved: false,
-    reviewedBy: '',
-    reviewedAt: '',
-    items: [
-      'Documento de identificação do produtor',
-      'Contrato de financiamento e documentos bancários',
-      'Extratos, comprovantes de pagamento e notificações recebidas',
-    ],
-  },
+{
+  area: 'Regularização Imobiliária',
+  approved: false,
+  reviewedBy: '',
+  reviewedAt: '',
+  items: [
+    'Documentos pessoais do proprietário ou possuidor',
+    'Matrícula, escritura, contrato ou comprovantes de posse',
+    'Documentos disponíveis do imóvel, como IPTU para imóveis urbanos ou CAR, CCIR e ITR para imóveis rurais',
+  ],
+},
   {
     area: 'Consultoria Jurídica para o Agro',
     approved: false,
@@ -122,6 +111,17 @@ documentChecklists: [
       'Notificações, comunicações e documentos relevantes para a análise',
     ],
   },
+  {
+  area: 'Direito de Família e Sucessões',
+  approved: false,
+  reviewedBy: '',
+  reviewedAt: '',
+  items: [
+    'Documento de identificação do interessado',
+    'Certidões de nascimento, casamento ou óbito, conforme o caso',
+    'Documentos relacionados à demanda, como comprovantes de renda e despesas, documentos de bens, acordos ou decisões judiciais existentes',
+  ],
+},
 ],
 
 professionalProfiles: [
@@ -135,17 +135,14 @@ professionalProfiles: [
       'Contratos Rurais',
       'Regularização de Imóveis Rurais',
     ],
-    biography: 'Ramon Bastos atua na advocacia voltada ao agronegócio, com foco na defesa dos interesses dos produtores rurais e na busca de soluções jurídicas estratégicas para o campo.',
+    biography: 'Atuo na advocacia voltada ao agronegócio, com foco na defesa dos interesses dos produtores rurais e na busca de soluções jurídicas estratégicas para o campo.',
     email: '',
     whatsapp: '',
   },
 ],
 
 social: {
-  instagram: 'https://instagram.com/seuperfil',
-  facebook: 'https://facebook.com/seuperfil',
-  linkedin: 'https://linkedin.com/company/seuperfil',
-  x: '',
+  instagram: 'https://www.instagram.com/advogadoramonbastos/',
 },
 
 // Página independente em /#/linkbio. Campos vazios reaproveitam o site.
@@ -201,7 +198,7 @@ about: {
   title: 'Compromisso com quem produz e movimenta o agronegócio',
   photo: '/media/Equipe3.png',
   photoAlt: 'Imagem ilustrativa da advocacia voltada ao agronegócio',
-  text: 'Ramon Bastos desenvolve uma atuação jurídica direcionada às necessidades do produtor rural. Com atenção às particularidades da atividade agrícola e pecuária, busca oferecer orientação técnica e estratégias responsáveis em questões relacionadas a dívidas rurais, execuções, contratos e regularização de propriedades.',
+  text: 'Me chamo Ramon Bastos, sou advogado e atuo há 13 anos, com foco nas necessidades do produtor rural. À frente do escritório Ramon Bastos Advocacia, ofereço atendimento próximo e orientação jurídica em questões relacionadas à prorrogação de dívidas rurais, contratos rurais, regularização imobiliária e Direito de Família e Sucessões. Meu compromisso é compreender cada situação e desenvolver estratégias responsáveis, com clareza, ética e respeito à história de cada cliente.',
   subtitle: 'Advocacia estratégica para proteger direitos, patrimônio e a continuidade das atividades no campo.',
   cards: [
     {
@@ -249,8 +246,8 @@ practiceAreas: [
     icon: 'fa-solid fa-building',
   },
   {
-    title: 'Crédito e Financiamento Rural',
-    description: 'Análise jurídica de financiamentos agrícolas, cédulas de crédito rural, garantias e obrigações perante instituições financeiras.',
+    title: 'regularização imobiliária e família e sucessões',
+    description: 'Assessoria jurídica na regularização de imóveis e em questões de família e sucessões, incluindo divórcio, guarda, pensão alimentícia, inventários e partilha de bens.',
     icon: 'fa-solid fa-landmark',
   },
   {
@@ -297,10 +294,10 @@ team: [
   {
     name: 'Ramon Bastos',
     role: 'Advogado | Advocacia do Agronegócio',
-    description: 'Atuação jurídica estratégica na defesa do produtor rural, com foco em dívidas rurais, execuções, contratos e regularização de imóveis.',
-    photo: '/IMGADV/5.jpeg',
-    instagram: '',
-    linkedin: '',
+    description: 'Atuo na advocacia voltada ao agronegócio, com foco na defesa dos interesses dos produtores rurais e na busca de soluções jurídicas estratégicas para o campo.',
+    photo: '/IMGADV/6.jpeg',
+    instagram: '@advogadoramonbastos',
+    linkedin: 'advogadoramonbastos@gmail.com',
   },
 ],
 
