@@ -80,7 +80,7 @@ function downloadChecklist() {
     <p v-if="!results.length">Não encontrou sua dúvida? <a href="#triagem">Converse com a equipe.</a></p>
   </section>
 
-  <section id="agendamento" class="content-section client-services" aria-labelledby="booking-title">
+  <!-- <section id="agendamento" class="content-section client-services" aria-labelledby="booking-title">
     <p class="eyebrow">ATENDIMENTO</p>
     <h2 id="booking-title">Organize sua conversa com o escritório</h2>
     <div v-if="bookingUrl" class="service-panel">
@@ -126,7 +126,7 @@ function downloadChecklist() {
       <p role="status" class="service-note">{{ status }}</p>
       <a v-if="prepared" :href="prepared" target="_blank" rel="noopener noreferrer" class="service-button"><i class="mdi mdi-whatsapp" aria-hidden="true" /> Abrir WhatsApp para enviar (nova aba)</a>
     </form>
-  </section>
+  </section> -->
 </template>
 
 <style scoped>

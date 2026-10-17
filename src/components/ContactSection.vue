@@ -22,6 +22,6 @@ const socialLinks = computed(() => Object.entries(c.social).filter(([, url]) => 
         <a v-for="[network, url] in socialLinks" :key="network" :href="url" target="_blank" rel="noopener" :aria-label="`${network} — abre em nova aba`"><i class="mdi" :class="`mdi-${network}`" aria-hidden="true" /></a>
       </nav>
     </div>
-    <div><h3>Prepare seu atendimento</h3><p>{{ c.contact.businessHours }}</p><a class="text-link" href="#documentos">Consultar documentos <i class="mdi mdi-arrow-right" aria-hidden="true" /></a><br><a class="text-link" href="#agendamento">Agendar atendimento <i class="mdi mdi-calendar-outline" aria-hidden="true" /></a></div>
+    <div><h3>Prepare seu atendimento</h3><p>{{ c.contact.businessHours }}</p><a class="text-link" href="#documentos">Consultar documentos <i class="mdi mdi-arrow-right" aria-hidden="true" /></a><br></div>
   </section>
 </template>
