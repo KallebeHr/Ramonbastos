@@ -30,7 +30,6 @@ onMounted(async () => { await nextTick(); title.value?.focus() })
           <a :href="`mailto:${profile.email || c.contact.email}`">E-mail</a>
           <a v-if="person.linkedin" :href="person.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn (nova aba)</a>
           <a v-if="person.instagram" :href="person.instagram" target="_blank" rel="noopener noreferrer">Instagram (nova aba)</a>
-          <a href="#agendamento">Agendar atendimento</a>
         </div>
       </div>
     </article>

@@ -179,7 +179,7 @@ onUnmounted(() => {
 
             <span class="mobile-brand-text">
               {{ c.brand.shortName }}
-              <small>ADVOCACIA</small>
+              <small>ADVOCACIA AGRO</small>
             </span>
           </a>
 
@@ -268,8 +268,8 @@ onUnmounted(() => {
             <span class="brand-name">
               {{ c.brand.shortName }}
             </span>
-            <small>ADVOCACIA</small>
-          </span>
+            <small>ADVOCACIA AGRO</small>
+          </span> 
         </a>
 
         <!-- PESQUISA -->

@@ -34,7 +34,7 @@ hero: {
 },
 
 contact: {
-  phone: '(83) 83 9129-5236',
+  phone: '(83) 9129-5236',
   phoneRaw: '5583991295236',
   whatsapp: '5583991295236',
   whatsappMessage: 'Olá, Dr. Ramon Bastos! Vim pelo site e gostaria de orientação jurídica sobre uma questão do agronegócio.',
@@ -134,6 +134,7 @@ professionalProfiles: [
       'Prorrogação de Dívidas Rurais',
       'Contratos Rurais',
       'Regularização de Imóveis Rurais',
+      'Família e Associações',
     ],
     biography: 'Atuo na advocacia voltada ao agronegócio, com foco na defesa dos interesses dos produtores rurais e na busca de soluções jurídicas estratégicas para o campo.',
     email: '',
@@ -296,7 +297,7 @@ team: [
     role: 'Advogado | Advocacia do Agronegócio',
     description: 'Atuo na advocacia voltada ao agronegócio, com foco na defesa dos interesses dos produtores rurais e na busca de soluções jurídicas estratégicas para o campo.',
     photo: '/IMGADV/6.jpeg',
-    instagram: '@advogadoramonbastos',
+    instagram: 'https://www.instagram.com/advogadoramonbastos/',
     linkedin: 'advogadoramonbastos@gmail.com',
   },
 ],
