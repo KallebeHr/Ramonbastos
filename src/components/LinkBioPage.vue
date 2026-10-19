@@ -144,7 +144,7 @@
         <nav aria-label="Contatos e localização do escritório" class="bio-channels">
           <a
             v-if="officeWhatsapp"
-            aria-label="Fale com a equipe pelo WhatsApp (abre em nova aba)"
+            aria-label="Fale com a equipe pelo WhatsApp"
             class="bio-primary-link"
             :href="officeWhatsapp"
             rel="noopener noreferrer"
@@ -158,7 +158,7 @@
           <div v-if="c.social.instagram || c.contact.mapUrl" class="bio-social-grid">
             <a
               v-if="c.social.instagram"
-              aria-label="Instagram do escritório (abre em nova aba)"
+              aria-label="Instagram do escritório"
               class="bio-social-link"
               :href="c.social.instagram"
               rel="noopener noreferrer"
@@ -168,7 +168,7 @@
             </a>
             <a
               v-if="c.contact.mapUrl"
-              aria-label="Abrir localização do escritório no mapa (abre em nova aba)"
+              aria-label="Abrir localização do escritório no mapa"
               class="bio-social-link"
               :href="c.contact.mapUrl"
               rel="noopener noreferrer"
@@ -205,7 +205,7 @@
               <div class="bio-person-actions">
                 <a
                   v-if="person.contactUrl"
-                  :aria-label="`${person.name} — ${person.role}: ${person.personalContact ? 'WhatsApp pessoal' : 'WhatsApp do escritório'} (abre em nova aba)`"
+                  :aria-label="`${person.name} — ${person.role}: ${person.personalContact ? 'WhatsApp pessoal' : 'WhatsApp do escritório'}`"
                   class="bio-person-whatsapp"
                   :href="person.contactUrl"
                   rel="noopener noreferrer"
@@ -213,7 +213,7 @@
                 ><i aria-hidden="true" class="mdi mdi-whatsapp" />{{ person.personalContact ? 'WhatsApp' : 'WhatsApp do escritório' }}</a>
                 <a
                   v-if="person.instagram"
-                  :aria-label="`Instagram de ${person.name} — ${person.role} (abre em nova aba)`"
+                  :aria-label="`Instagram de ${person.name} — ${person.role}`"
                   :href="person.instagram"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -231,7 +231,7 @@
           <a
             v-for="link in quickLinks"
             :key="link.href"
-            :aria-label="link.external ? `${link.label} (abre em nova aba)` : undefined"
+            :aria-label="link.external ? `${link.label}` : undefined"
             :href="link.href"
             :rel="link.external ? 'noopener noreferrer' : undefined"
             :target="link.external ? '_blank' : undefined"

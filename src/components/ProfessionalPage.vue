@@ -26,10 +26,10 @@ onMounted(async () => { await nextTick(); title.value?.focus() })
         <template v-if="profile.areas?.length"><h2>Áreas de atuação</h2><ul><li v-for="item in profile.areas" :key="item">{{ item }}</li></ul></template>
         <h2>Atendimento</h2>
         <div class="profile-links">
-          <a :href="contactUrl" target="_blank" rel="noopener noreferrer">WhatsApp (nova aba)</a>
+          <a :href="contactUrl" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a :href="`mailto:${profile.email || c.contact.email}`">E-mail</a>
-          <a v-if="person.linkedin" :href="person.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn (nova aba)</a>
-          <a v-if="person.instagram" :href="person.instagram" target="_blank" rel="noopener noreferrer">Instagram (nova aba)</a>
+          <a v-if="person.linkedin" :href="person.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a v-if="person.instagram" :href="person.instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
     </article>

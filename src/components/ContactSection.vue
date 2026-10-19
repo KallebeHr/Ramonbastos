@@ -26,7 +26,7 @@ const socialLinks = computed(() => Object.entries(c.social).filter(([, url]) => 
     :class="{ 'instagram-link': network === 'instagram' }"
     target="_blank"
     rel="noopener noreferrer"
-    :aria-label="`${network} — abre em nova aba`"
+    :aria-label="`${network}`"
   >
     <i
       class="mdi"

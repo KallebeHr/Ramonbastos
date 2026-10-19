@@ -134,7 +134,7 @@ professionalProfiles: [
       'Prorrogação de Dívidas Rurais',
       'Contratos Rurais',
       'Regularização de Imóveis Rurais',
-      'Família e Associações',
+      'Família e Sucessões.',
     ],
     biography: 'Atuo na advocacia voltada ao agronegócio, com foco na defesa dos interesses dos produtores rurais e na busca de soluções jurídicas estratégicas para o campo.',
     email: '',
