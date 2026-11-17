@@ -7,7 +7,7 @@ export const siteConfig = reactive({
     oab: 'OAB/MA 29.564-A · OAB/TO 5.956',
     logo: '/teste.svg',
     initials: 'RB',
-    favicon: '/favicon.ico',
+    favicon: '/teste.svg',
     developer: 'Max Sistemas',
   },
 
